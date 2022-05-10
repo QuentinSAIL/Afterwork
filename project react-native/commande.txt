@@ -1,0 +1,2 @@
+communiquer avec l'API :
+adb reverse tcp:8000 tcp:8000

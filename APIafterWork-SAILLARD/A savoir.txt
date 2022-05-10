@@ -1,0 +1,6 @@
+compte admin 
+identifiant	:toto@gmail.com
+mdp		:toto
+
+
+et tous les mot de passe sont toto (normalement)
