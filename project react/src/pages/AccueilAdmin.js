@@ -36,6 +36,7 @@ const AccueilAdmin = () => {
     const handleResetMDP = (e) => {
         var IdUser = e.target.value
         Credentials.resetMDP(IdUser)
+        alert("mdp reset !")
     }
 
     return (

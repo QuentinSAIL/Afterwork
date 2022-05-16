@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.1
+-- version 5.1.3
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mer. 13 avr. 2022 à 13:51
--- Version du serveur : 10.4.22-MariaDB
--- Version de PHP : 8.1.1
+-- Généré le : mar. 10 mai 2022 à 21:16
+-- Version du serveur : 10.4.24-MariaDB
+-- Version de PHP : 7.4.29
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -41,7 +41,10 @@ CREATE TABLE `article` (
 --
 
 INSERT INTO `article` (`id_article`, `titre`, `id_employe`, `contenu`, `date_création_article`, `id_rubrique`) VALUES
-(3, 'voici la liste des nouveaux produits arrivés', 1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius pharetra nunc vel commodo. Mauris vehicula commodo luctus. In vitae ipsum bibendum, sodales ligula at, malesuada nulla. Pellentesque nec sapien lacinia, consectetur ligula ac, ultrices mauris. In id dapibus elit. Duis interdum ex id interdum mattis. Donec ultrices leo eget tellus consequat tincidunt. Vestibulum commodo libero a enim semper commodo. Nullam tempus augue nec odio dapibus, vel tincidunt nisi rutrum. Integer sodales pharetra pulvinar. Sed cursus lectus ut efficitur sollicitudin. Etiam sed nulla quis mi congue convallis eget eu leo.\r\n\r\nFusce sed justo gravida, malesuada ex nec, faucibus erat. Cras ac hendrerit eros, non semper erat. Phasellus facilisis urna lorem, id pharetra metus scelerisque eget. Nulla vehicula ex hendrerit, pellentesque erat id, gravida quam. Nam quis dignissim odio, sed tempor magna. Suspendisse pretium, purus nec faucibus accumsan, lectus eros dictum lorem, vel pretium augue purus a elit. Cras vitae aliquam lorem. Curabitur sed libero arcu. Sed dignissim urna arcu.\r\n\r\nNam neque nisl, sollicitudin sed sapien vitae, pellentesque placerat metus. Nunc ornare libero a tristique mattis. Fusce sit amet leo ut mi accumsan tempus. Ut bibendum luctus lorem at elementum. Etiam consectetur arcu ut massa congue iaculis. Nullam pulvinar libero at sodales laoreet. Nullam sit amet lectus elit. Donec consequat lorem in laoreet tempus. Aliquam vel lorem eleifend, pellentesque nunc quis, porttitor turpis. Ut id lorem non mi auctor volutpat vitae id magna. Aliquam non urna vitae justo sollicitudin gravida. Mauris sit amet risus vehicula, semper mi quis, auctor purus. Proin tempus ac erat eget cursus. Phasellus ac cursus felis. Nullam vel porta nisl.\r\n\r\nSed mollis arcu et nisl tincidunt pellentesque. Donec ultricies dolor est, quis porta eros lacinia a. Vestibulum cursus augue ac quam venenatis, et porta dui cursus. Curabitur bibendum tincidunt urna id placerat. Mauris nec luctus magna, vitae ultrices eros. Nam interdum sed mi fringilla pretium. Quisque a porta nulla, at volutpat lorem. Etiam sed ipsum eget ipsum faucibus egestas sit amet eget sapien. Praesent ac diam id tellus blandit egestas. Aliquam erat volutpat.\r\n\r\nVivamus semper faucibus lacus sit amet malesuada. Ut semper sit amet urna et hendrerit. Morbi consequat ac felis ac molestie. Mauris eget ligula vel nisi malesuada suscipit. Nam ultricies vel turpis quis imperdiet. Nam vulputate faucibus nunc, sed consequat urna blandit in. Morbi sit amet ullamcorper erat. Vivamus mattis dictum massa, nec pulvinar nunc pulvinar nec. Donec nec neque eget nulla dignissim vehicula. Etiam venenatis ante nec faucibus accumsan. Proin porttitor erat mi, non pharetra enim luctus at. Etiam quis pharetra eros.', '2022-01-05', 2);
+(3, 'voici la liste des nouveaux produits arrivés', 1, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam varius pharetra nunc vel commodo. Mauris vehicula commodo luctus. In vitae ipsum bibendum, sodales ligula at, malesuada nulla. Pellentesque nec sapien lacinia, consectetur ligula ac, ultrices mauris. In id dapibus elit. Duis interdum ex id interdum mattis. Donec ultrices leo eget tellus consequat tincidunt. Vestibulum commodo libero a enim semper commodo. Nullam tempus augue nec odio dapibus, vel tincidunt nisi rutrum. Integer sodales pharetra pulvinar. Sed cursus lectus ut efficitur sollicitudin. Etiam sed nulla quis mi congue convallis eget eu leo.\r\n\r\nFusce sed justo gravida, malesuada ex nec, faucibus erat. Cras ac hendrerit eros, non semper erat. Phasellus facilisis urna lorem, id pharetra metus scelerisque eget. Nulla vehicula ex hendrerit, pellentesque erat id, gravida quam. Nam quis dignissim odio, sed tempor magna. Suspendisse pretium, purus nec faucibus accumsan, lectus eros dictum lorem, vel pretium augue purus a elit. Cras vitae aliquam lorem. Curabitur sed libero arcu. Sed dignissim urna arcu.\r\n\r\nNam neque nisl, sollicitudin sed sapien vitae, pellentesque placerat metus. Nunc ornare libero a tristique mattis. Fusce sit amet leo ut mi accumsan tempus. Ut bibendum luctus lorem at elementum. Etiam consectetur arcu ut massa congue iaculis. Nullam pulvinar libero at sodales laoreet. Nullam sit amet lectus elit. Donec consequat lorem in laoreet tempus. Aliquam vel lorem eleifend, pellentesque nunc quis, porttitor turpis. Ut id lorem non mi auctor volutpat vitae id magna. Aliquam non urna vitae justo sollicitudin gravida. Mauris sit amet risus vehicula, semper mi quis, auctor purus. Proin tempus ac erat eget cursus. Phasellus ac cursus felis. Nullam vel porta nisl.\r\n\r\nSed mollis arcu et nisl tincidunt pellentesque. Donec ultricies dolor est, quis porta eros lacinia a. Vestibulum cursus augue ac quam venenatis, et porta dui cursus. Curabitur bibendum tincidunt urna id placerat. Mauris nec luctus magna, vitae ultrices eros. Nam interdum sed mi fringilla pretium. Quisque a porta nulla, at volutpat lorem. Etiam sed ipsum eget ipsum faucibus egestas sit amet eget sapien. Praesent ac diam id tellus blandit egestas. Aliquam erat volutpat.\r\n\r\nVivamus semper faucibus lacus sit amet malesuada. Ut semper sit amet urna et hendrerit. Morbi consequat ac felis ac molestie. Mauris eget ligula vel nisi malesuada suscipit. Nam ultricies vel turpis quis imperdiet. Nam vulputate faucibus nunc, sed consequat urna blandit in. Morbi sit amet ullamcorper erat. Vivamus mattis dictum massa, nec pulvinar nunc pulvinar nec. Donec nec neque eget nulla dignissim vehicula. Etiam venenatis ante nec faucibus accumsan. Proin porttitor erat mi, non pharetra enim luctus at. Etiam quis pharetra eros.', '2022-01-05', 2),
+(10, 'Site web', 2, 'Afterwork va bientôt avoir son site web afin de faciliter les commandes des clients !', '2022-05-07', 5),
+(11, 'Fermeture exceptionnelle', 2, 'fermeture exceptionnelle de la boutique le 16 mai pour cause de travaux.', '2022-05-04', 5),
+(14, 'Un nouvel employé rejoint l\'équipe !', 2, 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus id sem augue. Nunc blandit risus eget turpis vehicula, vel laoreet purus feugiat. Quisque sed faucibus magna, eu egestas mauris. Nulla sed dapibus dolor. Suspendisse potenti. Morbi at justo pharetra, varius sapien sit amet, semper tortor. Quisque leo sem, pulvinar et libero ac, aliquet gravida dolor. Nam dapibus aliquet ex, a gravida nunc. Vestibulum sit amet porttitor urna, in ', '0000-00-00', 5);
 
 -- --------------------------------------------------------
 
@@ -112,7 +115,7 @@ CREATE TABLE `client` (
 
 INSERT INTO `client` (`id_client`, `nom_client`, `prenom_client`, `mot_de_passe`, `mail_client`, `lib_rue_client`, `CP_client`, `ville_client`, `tel_client`, `abonnement_newsletter`, `id_role`) VALUES
 (2, 'SAILLARD', 'Quentin', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'saillard@gmail.com', 'vallée', '39210', 'NEVY', '3849503249', 0, 3),
-(3, 'DEUXIEME', 'ienclit', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'ienclit@gmail.com', 'dzdz', 'FEEFDQ', 'ZQDQZD', 'DQDZZED', 1, 3);
+(3, 'DEUXIEME', 'client', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'ienclit@gmail.com', 'dzdz', 'FEEFDQ', 'ZQDQZD', 'DQDZZED', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -127,6 +130,13 @@ CREATE TABLE `commande` (
   `date_commande` datetime NOT NULL,
   `no_table` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `commande`
+--
+
+INSERT INTO `commande` (`id_commande`, `id_statut`, `id_employe`, `date_commande`, `no_table`) VALUES
+(1, 9, 1, '2022-05-10 19:49:10', 3);
 
 -- --------------------------------------------------------
 
@@ -150,8 +160,9 @@ CREATE TABLE `commentaire` (
 INSERT INTO `commentaire` (`id_commentaire`, `id_client`, `id_produit`, `titre`, `description`, `date`) VALUES
 (7, 2, 1, 'yoyoyoyoy nouveau ca marche ?', 'ok bon bah je teste voir si ca marche encore une fois', '2022-01-12 18:56:57'),
 (8, 2, 1, 'zdzd', 'dzqdsfgjknbfvdq', '2022-01-14 18:54:04'),
-(9, 3, 2, 'Bonjour', 'j\'adore laisser des commentaires\n', '2022-01-16 11:14:33'),
-(10, 3, 2, 'j\'ai adoré ce miel', 'hmmm ce fut très super bon', '2022-01-16 12:25:17');
+(9, 2, 2, 'Un commentaire', 'j\'adore laisser des commentaires\n', '2022-01-16 11:14:33'),
+(10, 3, 2, 'j\'ai adoré ce miel', 'C\'était très bon je recommande !', '2022-01-16 12:25:17'),
+(11, 2, 2, 'produit de qualité', 'j\'ai bien aimé ce miel ', '2022-05-07 14:21:02');
 
 -- --------------------------------------------------------
 
@@ -433,8 +444,9 @@ CREATE TABLE `employe` (
 --
 
 INSERT INTO `employe` (`id_employe`, `id_role`, `nom`, `prenom`, `mot_de_passe`, `mail`, `lib_rue`, `CP_ville`, `ville`, `tel`, `date_embauche`) VALUES
+(0, 2, 'NULL', 'NULL', 'aucunmdp', 'NULL', '', '', '', '', '0000-01-01'),
 (1, 1, 'L\'ADMINISTRATEUR', 'JEAN', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'toto@gmail.com', 'de la vallée', '39210', 'NEVY SUR SEILLE', '0689435465', '2022-01-12'),
-(2, 4, 'LE REDAC', 'Dédé', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'dede@gmail.com', 'la fontaine', '1664', 'kronenville', '1234567890', '2022-01-14'),
+(2, 4, 'LE REDAC', 'Daniel', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'dede@gmail.com', 'la fontaine', '1664', 'kronenville', '1234567890', '2022-01-14'),
 (3, 4, 'Redacteur', 'Marco', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'marco@gmail.com', 'papillon', '25000', 'BESANCON', '1234567890', '2022-01-15'),
 (9, 2, 'Lefanier', 'Maurice', '$argon2i$v=19$m=16,t=2,p=1$d3pFUVliV1hZdHZmeTZjNnRCR3pLU1ZQWG9KRjBhSUk$reYlkBDkMwd0aCZ9nqRKdQ', 'maurice@gmail.com', 'Rue du poisson', '25000', 'marseille', '3334443434', '2022-01-14');
 
@@ -605,7 +617,7 @@ INSERT INTO `produit` (`id_produit`, `libelle_produit`, `id_tva`, `id_categorie`
 (142, 'Infusion Verveine - 15 infusettes', 3, 23, 'Verveine Bio', 4, NULL, 1, 1),
 (143, 'Tisane de Noël - 15 infusettes', 3, 23, 'Cannelle, Orange Douce, Badiane, Hibiscus, Orange Amère, Cardamome', 2, NULL, 1, 1),
 (144, 'Transit - 15 infusettes', 3, 23, 'Anis Vert, Menthe Douce, Citronnelle', 4, NULL, 1, 1),
-(145, 'bonjour je test', 3, 1, 'bjr', 21, '', 0, 1),
+(145, 'stock', 1, 1, 'une maxi bon produit !', 1, '', 1, 0),
 (146, 'bonjour je test', 3, 1, 'bjr', 21, '', 0, 1),
 (147, 'bonjour je test', 3, 1, 'bjr', 21, '', 0, 1),
 (148, 'Maurice Lefanier', 3, 1, 'test', -2, '', 1, 0);
@@ -624,6 +636,14 @@ CREATE TABLE `produit_commande` (
   `prix_HT` float NOT NULL,
   `montant_TVA` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `produit_commande`
+--
+
+INSERT INTO `produit_commande` (`id_commande`, `id_produit`, `id_declinaison_produit`, `quantité_produit`, `prix_HT`, `montant_TVA`) VALUES
+(1, 1, 2, 4, 4.3, 0.2),
+(1, 4, NULL, 2, 5, 0.2);
 
 -- --------------------------------------------------------
 
@@ -683,16 +703,16 @@ CREATE TABLE `statut_commande` (
 --
 
 INSERT INTO `statut_commande` (`id_statut`, `libelle_statut`, `description_statut`) VALUES
-(1, 'en attente de confirmation de la commande', ''),
+(1, 'en attente de confirmation', ''),
 (2, 'acceptée', 'commande acceptée'),
-(3, 'refusée', 'commande refusée'),
-(4, 'en préparation', 'la commande est en cours de préparation'),
-(5, 'en attente de livraison en salle', 'la commande est prête et va bientôt être livrée'),
-(6, 'client partit', 'le client est parti sans payer et sans avoir été livré'),
-(7, 'livrée, attente de paiement', 'La commande à bien été livrée, en attente du paiement du client.'),
-(8, 'client parti sans payer', 'Le client à bien été livré, mais est parti sans payer.'),
-(9, 'réclamation client', 'le client n\'est pas satisfait'),
-(10, 'fini', 'La commande est terminée');
+(3, 'en préparation', 'la commande est en cours de préparation'),
+(4, 'en attente de livraison en salle', 'la commande est prête et va bientôt être livrée'),
+(5, 'attente de paiement', 'La commande à bien été livrée, en attente du paiement du client.'),
+(6, 'commande terminée', 'La commande est terminée'),
+(7, 'refusée', 'commande refusée'),
+(8, 'client parti', 'le client est parti sans payer et sans avoir été livré'),
+(9, 'client parti sans payer', 'Le client à bien été livré, mais est parti sans payer.'),
+(10, 'réclamation client', 'le client n\'est pas satisfait');
 
 -- --------------------------------------------------------
 
@@ -831,7 +851,7 @@ ALTER TABLE `tva`
 -- AUTO_INCREMENT pour la table `article`
 --
 ALTER TABLE `article`
-  MODIFY `id_article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_article` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT pour la table `categorie`
@@ -849,13 +869,13 @@ ALTER TABLE `client`
 -- AUTO_INCREMENT pour la table `commande`
 --
 ALTER TABLE `commande`
-  MODIFY `id_commande` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=66;
+  MODIFY `id_commande` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
 
 --
 -- AUTO_INCREMENT pour la table `commentaire`
 --
 ALTER TABLE `commentaire`
-  MODIFY `id_commentaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id_commentaire` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `declinaison`
@@ -873,7 +893,7 @@ ALTER TABLE `declinaison_produit`
 -- AUTO_INCREMENT pour la table `employe`
 --
 ALTER TABLE `employe`
-  MODIFY `id_employe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_employe` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT pour la table `produit`
@@ -891,13 +911,13 @@ ALTER TABLE `role`
 -- AUTO_INCREMENT pour la table `rubrique`
 --
 ALTER TABLE `rubrique`
-  MODIFY `id_rubrique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_rubrique` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT pour la table `statut_commande`
 --
 ALTER TABLE `statut_commande`
-  MODIFY `id_statut` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id_statut` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=102;
 
 --
 -- AUTO_INCREMENT pour la table `tva`
